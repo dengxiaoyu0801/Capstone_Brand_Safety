@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://github.com/dengxiaoyu0801/binder-framework)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dengxiaoyu0801/binder-framework/master)
 
 
 # Using Binder to Host your Notebooks
