@@ -8,7 +8,7 @@ import pandas as pd
 
 def vect(test_X):
     vect = TfidfVectorizer(max_features=5000,stop_words='english')
-    train_df = pd.read_csv(r'C:\Users\Xiaoyu\Documents\data_bootcamp\project\data set 1\train.csv')
+    train_df = pd.read_csv('train.csv')
     X = train_df['comment_text']
     X_dtm = vect.fit_transform(X)
     test_X_dtm = vect.transform(test_X)
