@@ -10,7 +10,7 @@ def vect(test_X):
     def _fetch_train_data():
         pdfs = []
         for i in [1,2,3,4]:
-            pdf.append(pd.read_csv(f'train_part_{i}.csv')
+            pdfs.append(pd.read_csv(f'train_part_{i}.csv')
         return pd.concat(pdfs)
                        
     vect = TfidfVectorizer(max_features=5000,stop_words='english')
