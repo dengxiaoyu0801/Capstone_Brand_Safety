@@ -5,3 +5,4 @@ sklearn==0.0.post5
 scipy == 1.9.2
 functools == 0.5
 praw == 7.7.0
+re==3.11
