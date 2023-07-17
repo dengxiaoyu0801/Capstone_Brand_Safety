@@ -7,8 +7,14 @@ from scipy.sparse import csr_matrix, hstack
 import pandas as pd
 
 def vect(test_X):
+    def _fetch_train_data():
+        pdfs = []
+        for i in [1,2,3,4]:
+            pdf.append(pd.read_csv(f'train_part_{i}.csv')
+        return pd.concat(pdfs)
+                       
     vect = TfidfVectorizer(max_features=5000,stop_words='english')
-    train_df = pd.read_csv('train.csv')
+    train_df = _fetch_train_data()
     X = train_df['comment_text']
     X_dtm = vect.fit_transform(X)
     test_X_dtm = vect.transform(test_X)
